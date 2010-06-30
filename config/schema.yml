@@ -1,0 +1,16 @@
+propel:
+  _attributes:
+    package: lib.model
+    defaultIdMethod: native
+  info:
+    _attributes: { phpName: Info }
+    id: { type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    name: { type: VARCHAR, size: '20', required: false }
+    pass: { type: VARCHAR, size: '20', required: false }
+  info_post:
+    _attributes: { phpName: InfoPost }
+    id: { type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    name: { type: VARCHAR, size: '20', required: true }
+    title: { type: VARCHAR, size: '50', required: true }
+    text: { type: LONGVARCHAR, required: true }
+    created_at: { type: TIMESTAMP, required: true }
