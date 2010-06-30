@@ -1,17 +1,23 @@
 <head>
 <link rel = "stylesheet" type = "text/css" href = "/css/style.css" />
 <style type="text/css">
-p{text-align:center;
-font-size:20px;
-font-weight:bold;}
+p {text-align:center;
+font-weight:bold;
+font-color:black;}
+th {text-align:center;
+background-color:lightblue;}
+</style>
 </head>
 
 <?php use_helper('Form');
 //echo $hello;
 echo form_tag('blog/login');?>
-<p> <?php echo "USERNAME";?>
+
+<table>
+<th><p> <?php echo "USERNAME";?>
 <?php echo input_tag('name', '');?></p>
 <p><br><?php echo "PASSWORD";?></br>
 <?php echo input_password_tag('password', '');?></p>
-<p1 font-weight:normal,text-align:center><br><?php echo submit_tag('login');?></br>
-<a href = "http://sruthi.localhost/frontend_dev.php/blog/new">new user</a></p1>
+<p><br><?php echo submit_tag('login');?></br>
+<a href = "http://sruthi.localhost/frontend_dev.php/blog/new">new user</a></p>
+</th></table>
